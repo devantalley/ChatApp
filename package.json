@@ -1,9 +1,9 @@
 {
-  "name": "co95b-0514c4e68fea",
+  "name": "cBgk9MUW",
   "dependencies": {
     "react": "16.0.0",
     "react-dom": "16.0.0",
-    "@pusher/chatkit": "0.7.12"
+    "@pusher/chatkit": "0.7.15"
   },
   "devDependencies": {
     "webpack": "^2.0",

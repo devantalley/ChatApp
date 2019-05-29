@@ -1,9 +1,9 @@
 :root {
-    --main-color: #5ea3d0;
+    --main-color: #f4bd8d;
     --secondary-color: white;
-    --main-text-color: #3e5869;
-    --secondary-text-color: #b0c7d6;
-    --send-message-form: #F5F5F5;
+    --main-text-color: #ff632b;
+    --secondary-text-color: white;
+    --send-message-form: #e2d4cc;
 }
 
 html, body {
@@ -12,7 +12,7 @@ html, body {
     padding: 0;
     font-family: system-ui;
     font-weight: 200;
-    color: 	#3e5869; 
+    color: 	#ff632b; 
 }
 
 #root {
@@ -25,12 +25,12 @@ html, body {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 60px;
     grid-template-areas: 
+        "n m m m m m"
         "r m m m m m"
         "r m m m m m"
         "r m m m m m"
-        "r m m m m m"
-        "r m m m m m"
-        "n f f f f f";
+        "r s s s s s"
+        "r s s s s s";
 }
 
 .new-room-form {
@@ -46,7 +46,7 @@ html, body {
 }
 
 .send-message-form {
-    grid-area: f;
+    grid-area: s;
 }
 
 /* REST OF CSS */
@@ -58,7 +58,7 @@ html, body {
     height: 100%;
 }
 
-.rooms-list > ul {
+.rooms-list ul {
     list-style-type: none;    
     padding: 0;
     overflow: scoll;
@@ -68,7 +68,7 @@ html, body {
     margin: 10px 0;
 }
 
-.rooms-list > h3 {
+.rooms-list h3 {
     margin: 5px 0;
     color: var(--secondary-color);
 }
@@ -86,7 +86,7 @@ html, body {
 
 .new-room-form {
     padding: 0 5px;
-    background: var(--secondary-color);
+    background: var(--send-message-form);
     color: var(--main-text-color);
 }
 
@@ -98,19 +98,20 @@ html, body {
 }
 
 .new-room-form input {
-    width: 135px;
-    background: var(--secondary-color);
+    width: 200px;
+    background: var(--send-message-form);
+    color: #ff632b;
 }
 
 .new-room-form button {
-    background: var(--secondary-color);
+    background: var(--send-message-form);
     color: var(--main-text-color);
     border: 0;
 } 
 
 .new-room-form input::placeholder {
     color: var(--main-text-color);
-    font-weight: 200;
+    font-weight: 230px;
 }
 
 .new-room-form input:focus {
@@ -126,14 +127,14 @@ html, body {
 }
 
 .message {
-    margin: 15px 0;
+    margin: 15px ;
 }
 
 .message .message-username {
     font-size: 11px;
     color: var(--main-text-color);
     opacity: 0.9;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
 }
 .message .message-text {
     background: var(--main-color);
@@ -172,7 +173,8 @@ html, body {
     margin: 0;
     border-style: none;
     background: var(--send-message-form);
-    font-weight: 200;
+    font-weight: 230;
+    color:#ff632b;
 
 }
 
